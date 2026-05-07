@@ -227,8 +227,14 @@ function desafioFinal() {
 
             vidas--
 
+            let coracoes = ""
+
+            for (let i = 0; i < vidas; i++) {
+                coracoes += "❤️ "
+            }
+
             console.log("\nResposta errada! Você perdeu 1 vida!".red)
-            console.log("Vidas restantes:", vidas)
+            console.log("Vidas restantes:", coracoes)
 
             if (vidas <= 0) {
                 console.log("\nVocê falhou no desafio final...".red)
